@@ -1,6 +1,6 @@
 {
   "name": "create-xkite-cli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Create xkite-cli with no build configuration",
   "bin": {
     "create-xkite-cli": "./create-xkite-cli.js"
