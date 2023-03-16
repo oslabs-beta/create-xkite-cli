@@ -13,7 +13,7 @@ const runCommand = (command) => {
 
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/oslabs-beta/xkite-cli ${repoName}`;
-const installDepsCommand = `cd ${repoName} && npm install && npm run installer`;
+const installDepsCommand = `cd ${repoName} && npm uninstall -g && npm install && npm run installer`;
 
 console.log(`Cloning the xkite-cli starter into ${repoName}`);
 const checkedOut = runCommand(gitCheckoutCommand);
